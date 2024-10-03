@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded",async function() {
     paragraph3.innerHTML="Hello World from Paragraph3"
 
     // let textInput = document.querySelector("textInput")
-    //let textOutput = document.querySelector("textOutput")
-    //textOutput.innerHTML = textInput.value
+    let textOutput = document.querySelector("textOutput")
+    textOutput.innerHTML = "Testing"
 })
 
 function displayTextOutput (){
@@ -31,7 +31,7 @@ function displayTextOutput (){
     let textInput = document.querySelector("textInput")
     let textInputButton = document.querySelector("textInputButton")
     let textOutput = document.querySelector("textOutput")
-    textInputButton.addEventListener("click", function() {
+    textInputButton.addEventListener("click", async function() {
         textOutput.innerHTML=textInput.data
     })
     //textInput.addEventListener("")
