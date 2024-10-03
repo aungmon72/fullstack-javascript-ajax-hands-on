@@ -8,4 +8,27 @@ document.addEventListener("DOMContentLoaded",async function() {
     console.log(responseData)
 
     content.innerHTML=responseData
+
+    let content2 = document.querySelector("#content2")
+    content2.innerHTML="Hello World Again"
+
+    let paragraph = document.querySelector("#paragraph")
+    paragraph.innerHTML="Hello World from Paragraph"
+
+    let paragraph2 = document.querySelector("#paragraph2")
+    paragraph2.innerHTML="Hello World from Paragraph2"
+
+    let paragraph3 = document.querySelector("#paragraph3")
+    paragraph3.innerHTML="Hello World from Paragraph3"
+
+    let textInput = document.querySelector("textInput")
+    let textOutput = document.querySelector("textOutput")
+    textOutput.innerHTML = textInput.value
 })
+
+function displayTextOutput (){
+//    textOutput.innerHTML = textInput.value
+    textInput.addEventListener("")
+}
+
+displayTextOutput()
