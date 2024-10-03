@@ -21,14 +21,20 @@ document.addEventListener("DOMContentLoaded",async function() {
     let paragraph3 = document.querySelector("#paragraph3")
     paragraph3.innerHTML="Hello World from Paragraph3"
 
-    let textInput = document.querySelector("textInput")
-    let textOutput = document.querySelector("textOutput")
-    textOutput.innerHTML = textInput.value
+    // let textInput = document.querySelector("textInput")
+    //let textOutput = document.querySelector("textOutput")
+    //textOutput.innerHTML = textInput.value
 })
 
 function displayTextOutput (){
 //    textOutput.innerHTML = textInput.value
-    textInput.addEventListener("")
+    let textInput = document.querySelector("textInput")
+    let textInputButton = document.querySelector("textInputButton")
+    let textOutput = document.querySelector("textOutput")
+    textInputButton.addEventListener("click", function() {
+        textOutput.innerHTML=textInput.data
+    })
+    //textInput.addEventListener("")
 }
 
 displayTextOutput()
