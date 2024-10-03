@@ -24,6 +24,9 @@ document.addEventListener("DOMContentLoaded",async function() {
     // let textInput = document.querySelector("textInput")
     let textOutput = document.querySelector("textOutput")
     textOutput.innerHTML = "Testing"
+    while (true) {
+        displayTextOutput()
+    }
 })
 
 function displayTextOutput (){
